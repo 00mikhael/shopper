@@ -41,6 +41,8 @@ function App() {
       setActiveTab(2)
     } else if (event.target.textContent === "Items") {
       setActiveTab(1)
+    } else {
+      setActiveTab(2)
     }
   }
 

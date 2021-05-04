@@ -7,7 +7,9 @@ const Nav = ({activeTab, onAction, cartItemQuantity, cartTotal}) => {
         <span onClick={onAction} className={`cursor-pointer border-b-4 select-none border-transparent ${activeTab === 1 ? `border-orange-400` : `hover:border-orange-400`}`}>Items</span>
         <span className={`cursor-pointer border-b-4 ml-8 z-10 select-none focus:bg-transparent border-transparent ${activeTab === 2 ? `border-orange-400` : `hover:border-orange-400`}`}><span onClick={onAction}>Cart</span>{cartItemQuantity > 0 ? <sup className="px-2 py-1 ml-1 rounded-full bg-orange-400 select-none">{cartItemQuantity}</sup> : ``}</span>
       </ul>
-      <PriceTag className={`px-2 py-4 flex items-center justify-center font-extrabold bg-orange-400`} basePrice={cartTotal} quantity={1} />
+      <span className={`cursor-pointer`} onClick={onAction}>
+        <PriceTag className={`px-2 py-4 flex items-center justify-center font-extrabold bg-orange-400`} basePrice={cartTotal} quantity={1} />
+      </span>
     </div>
   );
 };
