@@ -1,0 +1,26 @@
+{
+    "users": [
+      {
+        "valid": true,
+        "id": 1614447131917,
+        "firstName": "mikhael",
+        "lastName": "nwankwo",
+        "email": "mike@mail.com",
+        "code": "1234",
+        "balance": 0,
+        "transactions": [],
+        "prefrences": {}
+      },
+      {
+        "id": 1619381380362,
+        "firstName": "Mike",
+        "lastName": "Joe",
+        "email": "mike@joe.com",
+        "code": "1234",
+        "valid": true,
+        "balance": 0,
+        "transactions": [],
+        "prefrences": {}
+      }
+    ]
+  }
